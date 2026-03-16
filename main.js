@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       skill_game_engine: 'Game Engine',
       skill_visual: 'Visual & Tech Art',
       skill_tools: 'Tools & Methods',
+      skill_languages: 'Programming Languages',
       projects_title: 'Selected Work',
       skill_modeling: '3D 모델링',
       skill_texturing: 'PBR 텍스처링',
@@ -98,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       skill_game_engine: 'Game Engine',
       skill_visual: 'Visual & Tech Art',
       skill_tools: 'Tools & Methods',
+      skill_languages: 'Programming Languages',
       projects_title: 'Selected Work',
       skill_modeling: '3D Modeling',
       skill_texturing: 'PBR Texturing',
@@ -192,7 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
   typeWriter();
 
   // ── Scroll reveal (Intersection Observer) ─────────────
-  // 모든 .reveal 요소를 화면 15% 정도 진입했을 때 서서히 나타나게 함
   const revealEls = document.querySelectorAll('.reveal');
 
   const observerOptions = {
@@ -206,8 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
 
-        // Skill bars animation trigger
-        if (entry.target.id === 'skills') {
+        // 스킬 섹션 혹은 그 하위 요소가 보일 때 애니메이션 실행
+        if (entry.target.id === 'skills' || entry.target.closest('#skills')) {
           animateSkillBars();
         }
 
@@ -218,11 +219,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function animateSkillBars() {
     const fills = document.querySelectorAll('.skill-bar-fill');
+    if (fills.length === 0) return;
+
     fills.forEach(fill => {
-      const percent = fill.dataset.percent;
-      fill.style.width = percent + '%';
+      const percent = fill.getAttribute('data-percent');
+      // 이미 애니메이션이 진행 중이지 않을 때만 실행
+      if (fill.style.width !== percent + '%') {
+        setTimeout(() => {
+          fill.style.width = percent + '%';
+        }, 100);
+      }
     });
   }
+
+  // 초기 로드 시 이미 스킬 섹션이 보이고 있을 수 있으므로 체크
+  window.animateSkillBars = animateSkillBars;
 
   revealEls.forEach(el => observer.observe(el));
 

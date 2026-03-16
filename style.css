@@ -477,17 +477,17 @@ h1, h2, h3, .hero-eyebrow, .logo {
 
 .project-visual {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid var(--line-color);
 }
 
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  background-color: #fff;
+  object-fit: cover;
+  image-rendering: pixelated; /* 게임 그래픽을 선명하게 표시 */
   transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 

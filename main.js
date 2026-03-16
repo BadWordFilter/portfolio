@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Hamburger menu ───────────────────────────────────
   const hamburger = document.getElementById('hamburger');
-  const navLinks  = document.querySelector('.nav-links');
-  
+  const navLinks = document.querySelector('.nav-links');
+
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
@@ -55,6 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
       skill_visual: 'Visual & Tech Art',
       skill_tools: 'Tools & Methods',
       projects_title: 'Selected Work',
+      skill_modeling: '3D 모델링',
+      skill_texturing: 'PBR 텍스처링',
+      skill_vfx: '셰이더 & VFX',
+      skill_profiling: '메모리 프로파일링',
       project1_summary: '기억을 잃은 연구 시설에서 AI의 지시에 따라 다양한 기믹의 15개 퍼즐 스테이지를 돌파하는 액션 플랫포머 게임입니다. (Steam / STOVE 출시)',
       project1_tag1: '액션 플랫포머',
       project1_tag2: '퍼즐',
@@ -95,6 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
       skill_visual: 'Visual & Tech Art',
       skill_tools: 'Tools & Methods',
       projects_title: 'Selected Work',
+      skill_modeling: '3D Modeling',
+      skill_texturing: 'PBR Texturing',
+      skill_vfx: 'Shader & VFX',
+      skill_profiling: 'Memory Profiling',
       project1_summary: 'An action platformer where you break through 15 puzzle stages with various gimmicks following AI instructions in a memory-lost research facility. (Released on Steam / STOVE)',
       project1_tag1: 'Action Platformer',
       project1_tag2: 'Puzzle',
@@ -159,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function typeWriter() {
     if (!roleEl) return;
     const current = roles[roleIdx];
-    
+
     if (isDeleting) {
       roleEl.textContent = current.slice(0, --charIdx);
     } else {
@@ -178,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setTimeout(typeWriter, delay);
   }
-  
+
   // Initialize with saved language
   updateLanguage(currentLang);
   typeWriter();
@@ -186,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Scroll reveal (Intersection Observer) ─────────────
   // 모든 .reveal 요소를 화면 15% 정도 진입했을 때 서서히 나타나게 함
   const revealEls = document.querySelectorAll('.reveal');
-  
+
   const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -197,16 +205,30 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        obs.unobserve(entry.target); // 한 번 보여주면 다시 숨기지 않음 (성능 최적화)
+
+        // Skill bars animation trigger
+        if (entry.target.id === 'skills') {
+          animateSkillBars();
+        }
+
+        obs.unobserve(entry.target);
       }
     });
   }, observerOptions);
+
+  function animateSkillBars() {
+    const fills = document.querySelectorAll('.skill-bar-fill');
+    fills.forEach(fill => {
+      const percent = fill.dataset.percent;
+      fill.style.width = percent + '%';
+    });
+  }
 
   revealEls.forEach(el => observer.observe(el));
 
   // ── Active nav link highlight ────────────────────────
   const sections = document.querySelectorAll('section[id]');
-  const navAs    = document.querySelectorAll('.nav-links a');
+  const navAs = document.querySelectorAll('.nav-links a');
 
   window.addEventListener('scroll', () => {
     let current = '';
@@ -227,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   // ── Contact form (demo) ──────────────────────────────
-  const form    = document.getElementById('contact-form');
+  const form = document.getElementById('contact-form');
   const success = document.getElementById('form-success');
 
   if (form) {
@@ -235,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const btn = form.querySelector('button[type=submit]');
       const originalBtnText = btn.textContent;
-      
+
       btn.textContent = 'Sending...';
       btn.style.pointerEvents = 'none';
       btn.style.opacity = '0.7';
@@ -263,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.textContent = originalBtnText;
         btn.style.pointerEvents = 'auto';
         btn.style.opacity = '1';
-        
+
         setTimeout(() => {
           success.classList.remove('show');
         }, 5000);

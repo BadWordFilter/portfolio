@@ -38,12 +38,19 @@
   <nav id="navbar" class="navbar">
     <div class="nav-container">
       <a href="#hero" class="logo">HL.</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Expertise</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div style="display: flex; align-items: center;">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#skills" data-i18n="nav_expertise">Expertise</a></li>
+          <li><a href="#projects" data-i18n="nav_work">Work</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ko">KO</button>
+          <span class="lang-separator">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
       <div class="hamburger" id="hamburger" aria-label="메뉴 열기" role="button" aria-controls="nav-links">
         <span></span>
         <span></span>
@@ -55,9 +62,9 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-content reveal-on-load">
-      <p class="hero-eyebrow">Portfolio 2026</p>
-      <h1 class="hero-title">Hakju<br>Lee.</h1>
-      <p class="hero-subtitle">Meticulous Engineering meets Elegant Design.</p>
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Portfolio 2026</p>
+      <h1 class="hero-title" data-i18n="hero_title">Hakju<br>Lee.</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Meticulous Engineering meets Elegant Design.</p>
       <div class="hero-roles">
         <span id="role-text" aria-live="polite">Founder & CEO, RAMIC STUDIO</span>
         <span class="cursor">|</span>
@@ -70,24 +77,24 @@
     <div class="section-container">
       <div class="about-grid">
         <div class="about-text reveal">
-          <h2 class="section-title">01. <br>About Me</h2>
-          <p class="about-desc">
+          <h2 class="section-title">01. <br><span data-i18n="about_title">About Me</span></h2>
+          <p class="about-desc" data-i18n="about_desc">
             플레이어의 몰입감과 경험을 최우선으로 생각하며 <strong>RAMIC STUDIO</strong>를 창업하여 이끌고 있는 대표, <strong>이학주</strong>입니다.<br><br>
             기획의 의도를 정확하게 파악하고, 이를 극한의 성능과 단단한 아키텍처로 구현해내는 데 자부심을 느낍니다.
             눈에 보이지 않는 최적화부터 화면 속 생동감 넘치는 연출까지, 팀의 비전을 기술로 연결하여 하나의 '압도적인 세계'를 만드는 데 집중하고 있습니다.
           </p>
           <div class="about-info">
             <div class="info-item">
-              <span class="info-label">Name</span>
-              <span class="info-value">이학주 (Founder & CEO, RAMIC STUDIO)</span>
+              <span class="info-label" data-i18n="about_info_name">Name</span>
+              <span class="info-value" data-i18n="about_info_name_val">이학주 (Founder & CEO, RAMIC STUDIO)</span>
             </div>
             <div class="info-item">
               <span class="info-label">Email</span>
               <span class="info-value">hakju.lee@ramicstudio.com</span>
             </div>
             <div class="info-item">
-              <span class="info-label">Location</span>
-              <span class="info-value">Incheon, Korea</span>
+              <span class="info-label" data-i18n="about_info_location">Location</span>
+              <span class="info-value" data-i18n="about_info_location_val">Incheon, Korea</span>
             </div>
           </div>
         </div>
@@ -107,11 +114,11 @@
   <section id="skills" class="section">
     <div class="section-container">
       <div class="section-header reveal">
-        <h2 class="section-title">02. <br>Expertise</h2>
+        <h2 class="section-title">02. <br><span data-i18n="skills_title">Expertise</span></h2>
       </div>
       <div class="skills-grid">
         <div class="skill-column reveal">
-          <h3 class="skill-heading">Game Engine</h3>
+          <h3 class="skill-heading" data-i18n="skill_game_engine">Game Engine</h3>
           <ul class="minimal-list">
             <li>Unity <span class="skill-level">Expert</span></li>
             <li>Unreal Engine <span class="skill-level">Advanced</span></li>
@@ -119,7 +126,7 @@
           </ul>
         </div>
         <div class="skill-column reveal">
-          <h3 class="skill-heading">Visual & Tech Art</h3>
+          <h3 class="skill-heading" data-i18n="skill_visual">Visual & Tech Art</h3>
           <ul class="minimal-list">
             <li>3D Modeling & Sculpting <span class="skill-level">Expert</span></li>
             <li>PBR Texturing & UV <span class="skill-level">Advanced</span></li>
@@ -128,7 +135,7 @@
           </ul>
         </div>
         <div class="skill-column reveal">
-          <h3 class="skill-heading">Tools & Methods</h3>
+          <h3 class="skill-heading" data-i18n="skill_tools">Tools & Methods</h3>
           <ul class="minimal-list">
             <li>GitHub <span class="skill-level">Expert</span></li>
             <li>Blender <span class="skill-level">Expert</span></li>
@@ -144,7 +151,7 @@
   <section id="projects" class="section">
     <div class="section-container">
       <div class="section-header reveal">
-        <h2 class="section-title">03. <br>Selected Work</h2>
+        <h2 class="section-title">03. <br><span data-i18n="projects_title">Selected Work</span></h2>
       </div>
 
       <div class="projects-list">
@@ -152,12 +159,13 @@
         <article class="project-item reveal">
           <div class="project-info">
             <h3 class="project-name">PROJECT : GENESIS</h3>
-            <p class="project-summary">기억을 잃은 연구 시설에서 AI의 지시에 따라 다양한 기믹의 15개 퍼즐 스테이지를 돌파하는 액션 플랫포머 게임입니다. (Steam / STOVE
+            <p class="project-summary" data-i18n="project1_summary">기억을 잃은 연구 시설에서 AI의 지시에 따라 다양한 기믹의 15개 퍼즐 스테이지를 돌파하는
+              액션 플랫포머 게임입니다. (Steam / STOVE
               출시)</p>
             <ul class="project-stack">
-              <li>Action Platformer</li>
-              <li>Puzzle</li>
-              <li>Level Design</li>
+              <li data-i18n="project1_tag1">Action Platformer</li>
+              <li data-i18n="project1_tag2">Puzzle</li>
+              <li data-i18n="project1_tag3">Level Design</li>
             </ul>
             <div style="display: flex; gap: 1.5rem;">
               <a href="https://store.steampowered.com/app/2575790/PROJECT__GENESIS/" class="project-link"
@@ -174,12 +182,13 @@
         <article class="project-item reveal">
           <div class="project-info">
             <h3 class="project-name">Hack.ing</h3>
-            <p class="project-summary">정부 소속 서버를 방어하기 위해 23종의 해킹 퍼즐 및 선 잇기를 해결하며 장애물을 피하는 긴장감 넘치는 탄막 회피 게임입니다. (Steam /
+            <p class="project-summary" data-i18n="project2_summary">정부 소속 서버를 방어하기 위해 23종의 해킹 퍼즐 및 선 잇기를 해결하며 장애물을 피하는
+              긴장감 넘치는 탄막 회피 게임입니다. (Steam /
               STOVE 출시)</p>
             <ul class="project-stack">
-              <li>Bullet Hell</li>
-              <li>Casual Puzzle</li>
-              <li>Level Design</li>
+              <li data-i18n="project2_tag1">Bullet Hell</li>
+              <li data-i18n="project2_tag2">Casual Puzzle</li>
+              <li data-i18n="project2_tag3">Level Design</li>
             </ul>
             <div style="display: flex; gap: 1.5rem;">
               <a href="https://store.steampowered.com/app/2811360/Hacking/" class="project-link" target="_blank">Steam
@@ -195,8 +204,9 @@
         <!-- Project 3: Research & Award -->
         <article class="project-item reveal">
           <div class="project-info">
-            <h3 class="project-name">FSM 기반 NPC AI 성능 비교 연구</h3>
-            <p class="project-summary">Unity 엔진에서 FSM(유한 상태 기계)을 활용한 NPC AI의 성능을 정량적으로 분석하고 최적화 방안을 제시한 연구입니다.
+            <h3 class="project-name" data-i18n="project3_name">FSM 기반 NPC AI 성능 비교 연구</h3>
+            <p class="project-summary" data-i18n="project3_summary">Unity 엔진에서 FSM(유한 상태 기계)을 활용한 NPC AI의 성능을 정량적으로 분석하고
+              최적화 방안을 제시한 연구입니다.
               객체 수 증가에 따른 FPS 변화를 정밀하게 측정하여 FSM의 효율성을 입증하였으며,
               <strong>2025 한국디지털콘텐츠학회 하계종합학술대회</strong>에서 기술적 완성도를 인정받아 <strong>동상</strong>을 수상하였습니다.
             </p>
@@ -208,8 +218,8 @@
               <li>Academic Research</li>
             </ul>
             <div style="display: flex; align-items: center; gap: 1.5rem; margin-top: 1rem;">
-              <a href="./[양식] DCS_2025_하계종합학술대회_대학생논문경진대회_논문_Form(대학생)_이학주.pdf" class="project-link"
-                target="_blank">Read Paper &rarr;</a>
+              <a href="./[양식] DCS_2025_하계종합학술대회_대학생논문경진대회_논문_Form(대학생)_이학주.pdf" class="project-link" target="_blank"
+                data-i18n="read_paper">Read Paper &rarr;</a>
             </div>
           </div>
           <div class="project-visual" style="aspect-ratio: 4 / 5; background: #fff;">
@@ -227,8 +237,8 @@
     <div class="section-container">
       <div class="contact-grid">
         <div class="contact-text reveal">
-          <h2 class="section-title">04. <br>Get in Touch</h2>
-          <p class="contact-desc">
+          <h2 class="section-title">04. <br><span data-i18n="contact_title">Get in Touch</span></h2>
+          <p class="contact-desc" data-i18n="contact_desc">
             새로운 기회와 혁신적인 프로젝트 제안을 언제나 환영합니다.<br>
             아래 폼을 통해 메시지를 남겨주시거나 이메일로 연락주세요.
           </p>
@@ -248,8 +258,9 @@
               <textarea id="message" name="message" rows="4" required placeholder=" " aria-label="메시지 내용"></textarea>
               <label for="message">Message</label>
             </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-            <div id="form-success" class="form-success" aria-live="polite">메시지가 성공적으로 전송되었습니다.</div>
+            <button type="submit" class="submit-btn" data-i18n="send_message">Send Message</button>
+            <div id="form-success" class="form-success" aria-live="polite" data-i18n="form_success">메시지가 성공적으로 전송되었습니다.
+            </div>
           </form>
         </div>
       </div>

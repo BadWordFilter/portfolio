@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이학주 | 개발자 포트폴리오</title>
+
+  <!-- Web Design Guidelines & Typography Setup -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Playfair Display for Editorial Elegance, Outfit for High Legibility -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">HL.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Expertise</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="메뉴 열기" role="button" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content reveal-on-load">
+      <p class="hero-eyebrow">Portfolio 2026</p>
+      <h1 class="hero-title">Hakju<br>Lee.</h1>
+      <p class="hero-subtitle">Meticulous Engineering meets Elegant Design.</p>
+      <div class="hero-roles">
+        <span id="role-text" aria-live="polite">Game Developer</span>
+        <span class="cursor">|</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">01. <br>About Me</h2>
+          <p class="about-desc">
+            플레이어의 몰입감과 경험을 가장 먼저 생각하는 게임 개발자, <strong>이학주</strong>입니다.<br><br>
+            기획의 의도를 정확하게 파악하고, 이를 극한의 성능과 단단한 아키텍처로 구현해내는 데 자부심을 느낍니다.
+            눈에 보이지 않는 최적화부터 화면 속 생동감 넘치는 연출까지, 모든 디테일이 모여 하나의 '압도적인 세계'를 만든다고 믿습니다.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Name</span>
+              <span class="info-value">이학주</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value">hakju.lee@ramicstudio.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Incheon, Korea</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <!-- 945x1260 프로필 사진 비율을 완벽히 유지하기 위한 프레임 -->
+          <div class="image-frame">
+            <img src="./profile.jpg" alt="이학주 프로필 사진"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="profile-placeholder">HJ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise (Skills) Section -->
+  <section id="skills" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">02. <br>Expertise</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-column reveal">
+          <h3 class="skill-heading">Game Engine</h3>
+          <ul class="minimal-list">
+            <li>Unity <span class="skill-level">Expert</span></li>
+            <li>Unreal Engine <span class="skill-level">Advanced</span></li>
+            <li>RPG Maker <span class="skill-level">Proficient</span></li>
+          </ul>
+        </div>
+        <div class="skill-column reveal">
+          <h3 class="skill-heading">Graphics & Logic</h3>
+          <ul class="minimal-list">
+            <li>Shader Graph / HLSL <span class="skill-level">Proficient</span></li>
+            <li>DirectX / OpenGL <span class="skill-level">Intermediate</span></li>
+            <li>AI & Pathfinding <span class="skill-level">Advanced</span></li>
+            <li>Physics Systems <span class="skill-level">Proficient</span></li>
+          </ul>
+        </div>
+        <div class="skill-column reveal">
+          <h3 class="skill-heading">Tools & Methods</h3>
+          <ul class="minimal-list">
+            <li>Git & Perforce <span class="skill-level">Advanced</span></li>
+            <li>Blender / 3D Math <span class="skill-level">Proficient</span></li>
+            <li>Memory Profiling <span class="skill-level">Advanced</span></li>
+            <li>Agile (Scrum) <span class="skill-level">Proficient</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (Work) Section -->
+  <section id="projects" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">03. <br>Selected Work</h2>
+      </div>
+
+      <div class="projects-list">
+        <!-- Project 1 -->
+        <article class="project-item reveal">
+          <div class="project-info">
+            <h3 class="project-name">PROJECT : GENESIS</h3>
+            <p class="project-summary">기억을 잃은 연구 시설에서 AI의 지시에 따라 다양한 기믹의 15개 퍼즐 스테이지를 돌파하는 액션 플랫포머 게임입니다. (Steam / STOVE
+              출시)</p>
+            <ul class="project-stack">
+              <li>Action Platformer</li>
+              <li>Puzzle</li>
+              <li>Level Design</li>
+            </ul>
+            <div style="display: flex; gap: 1.5rem;">
+              <a href="https://store.steampowered.com/app/2575790/PROJECT__GENESIS/" class="project-link"
+                target="_blank">Steam &rarr;</a>
+              <a href="https://store.onstove.com/ko/games/4278" class="project-link" target="_blank">STOVE &rarr;</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <img src="./PROJECT GENESIS.png" alt="PROJECT : GENESIS 게임 이미지" class="project-img">
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-item reveal">
+          <div class="project-info">
+            <h3 class="project-name">Hack.ing</h3>
+            <p class="project-summary">정부 소속 서버를 방어하기 위해 23종의 해킹 퍼즐 및 선 잇기를 해결하며 장애물을 피하는 긴장감 넘치는 탄막 회피 게임입니다. (Steam /
+              STOVE 출시)</p>
+            <ul class="project-stack">
+              <li>Bullet Hell</li>
+              <li>Casual Puzzle</li>
+              <li>Level Design</li>
+            </ul>
+            <div style="display: flex; gap: 1.5rem;">
+              <a href="https://store.steampowered.com/app/2811360/Hacking/" class="project-link" target="_blank">Steam
+                &rarr;</a>
+              <a href="https://store.onstove.com/ko/games/4307" class="project-link" target="_blank">STOVE &rarr;</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <img src="./Hack.ing.png" alt="Hack.ing 게임 이미지" class="project-img">
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-container">
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <h2 class="section-title">04. <br>Get in Touch</h2>
+          <p class="contact-desc">
+            새로운 기회와 혁신적인 프로젝트 제안을 언제나 환영합니다.<br>
+            아래 폼을 통해 메시지를 남겨주시거나 이메일로 연락주세요.
+          </p>
+        </div>
+        <div class="contact-form-wrapper reveal">
+          <form id="contact-form" class="editorial-form" action="https://formsubmit.co/hakju.lee@ramicstudio.com"
+            method="POST">
+            <div class="input-group">
+              <input type="text" id="name" name="name" required placeholder=" " aria-label="이름">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" name="email" required placeholder=" " aria-label="이메일">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" name="message" rows="4" required placeholder=" " aria-label="메시지 내용"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div id="form-success" class="form-success" aria-live="polite">메시지가 성공적으로 전송되었습니다.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Hakju Lee. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -514,7 +514,8 @@ h3,
   left: 0;
   height: 100%;
   background-color: var(--accent);
-  width: 0; /* JS에서 업데이트 */
+  width: 0;
+  /* JS에서 업데이트 */
   transition: width 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 

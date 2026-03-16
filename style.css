@@ -475,6 +475,21 @@ h1, h2, h3, .hero-eyebrow, .logo {
   padding-left: 0.5rem;
 }
 
+.award-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 4px; /* 우아한 각진 느낌 혹은 둥근 느낌 */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(140, 122, 107, 0.2);
+}
+
 .project-visual {
   width: 100%;
   aspect-ratio: 1 / 1; /* 정사각형 컨테이너 */

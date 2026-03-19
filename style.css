@@ -600,7 +600,7 @@ h3,
 .project-link:hover {
   color: var(--accent);
   border-color: var(--accent);
-  padding-left: 0.5rem;
+  transform: translateX(6px);
 }
 
 .award-badge {

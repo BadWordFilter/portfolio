@@ -68,6 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
       project2_tag1: '탄막 회피',
       project2_tag2: '캐주얼 퍼즐',
       project2_tag3: '레벨 디자인',
+      project_award_name: '2025 SCHU AI·SW Festival 게임개발경진대회 - 최우수상 (MAYHEM)',
+      project_award_summary: `사각형 케이지 안에서 2분 동안 7종류의 적을 처치하며 최고 점수를 겨루는 2D 아케이드 액션 게임 <strong>'MAYHEM'</strong>으로 <strong>최우수상</strong>을 수상하였습니다. 
+                              물리 기반 이동과 독창적인 점수 공식 <code>(킬 수 + Σ(멀티킬 수 - 1) * 스타일 점수)</code>을 활용한 전략적 콤보 시스템으로 심사위원들의 극찬을 받으며 기술력과 독창성을 인정받았습니다.`,
+      video_mayhem1: 'MAYHEM 시연 영상 (1) &rarr;',
+      video_mayhem2: 'MAYHEM 시연 영상 (2) &rarr;',
+      view_certificate_schu: '상장 보기 (PDF) &rarr;',
       project3_name: 'FSM 기반 NPC AI 성능 비교 연구',
       project3_summary: `Unity 엔진에서 FSM(유한 상태 기계)을 활용한 NPC AI의 성능을 정량적으로 분석하고 최적화 방안을 제시한 연구입니다.
                          객체 수 증가에 따른 FPS 변화를 정밀하게 측정하여 FSM의 효율성을 입증하였으며,
@@ -113,6 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
       project2_tag1: 'Bullet Hell',
       project2_tag2: 'Casual Puzzle',
       project2_tag3: 'Level Design',
+      project_award_name: '2025 SCHU AI·SW Festival Game Development - Grand Prize (MAYHEM)',
+      project_award_summary: `Awarded the <strong>Grand Prize</strong> for <strong>'MAYHEM'</strong>, a 2D arcade action game where players compete for the highest score by defeating 7 types of enemies in a square cage within 2 minutes.
+                              Recognized for its technical excellence and originality, particularly for its physics-based movement and strategic combo system using a unique scoring formula <code>(Kills + Σ(Multi-kills - 1) * Style Score)</code>.`,
+      video_mayhem1: 'MAYHEM Demo (1) &rarr;',
+      video_mayhem2: 'MAYHEM Demo (2) &rarr;',
+      view_certificate_schu: 'View Certificate (PDF) &rarr;',
       project3_name: 'Comparative Study on NPC AI Performance using FSM',
       project3_summary: `This study quantitatively analyzed the performance of NPC AI using FSM (Finite State Machine) in the Unity engine and proposed optimization methods.
                          By precisely measuring FPS changes according to the increase in the number of objects, the efficiency of FSM was proven.

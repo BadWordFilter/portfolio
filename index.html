@@ -51,11 +51,11 @@
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
       </div>
-      <div class="hamburger" id="hamburger" aria-label="메뉴 열기" role="button" aria-controls="nav-links">
+      <button class="hamburger" id="hamburger" aria-label="메뉴 열기" data-i18n-aria="nav_open" aria-controls="nav-links">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </div>
   </nav>
 
@@ -101,7 +101,7 @@
         <div class="about-image reveal">
           <!-- 945x1260 프로필 사진 비율을 완벽히 유지하기 위한 프레임 -->
           <div class="image-frame">
-            <img src="./profile.jpg" alt="이학주 프로필 사진"
+            <img src="./profile.jpg" alt="이학주 프로필 사진" width="945" height="1260" fetchpriority="high"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="profile-placeholder">HJ</div>
           </div>
@@ -253,7 +253,7 @@
           </div>
           <div class="project-visual" style="background: #fff; aspect-ratio: 4 / 5;">
             <img src="./award_schu.png" alt="2025 SCHU AI·SW Festival 최우수상 MAYHEM" class="project-img"
-              style="object-fit: contain; image-rendering: auto;">
+              width="800" height="1000" loading="lazy" style="object-fit: contain; image-rendering: auto;">
           </div>
         </article>
 
@@ -276,7 +276,7 @@
             </div>
           </div>
           <div class="project-visual">
-            <img src="./PROJECT GENESIS.png" alt="PROJECT : GENESIS 게임 이미지" class="project-img">
+            <img src="./PROJECT GENESIS.png" alt="PROJECT : GENESIS 게임 이미지" class="project-img" width="1000" height="1000" loading="lazy">
           </div>
         </article>
 
@@ -299,7 +299,7 @@
             </div>
           </div>
           <div class="project-visual">
-            <img src="./Hack.ing.png" alt="Hack.ing 게임 이미지" class="project-img">
+            <img src="./Hack.ing.png" alt="Hack.ing 게임 이미지" class="project-img" width="1000" height="1000" loading="lazy">
           </div>
         </article>
 
@@ -326,7 +326,7 @@
           </div>
           <div class="project-visual" style="aspect-ratio: 4 / 5; background: #fff;">
             <img src="./논문상장.jpg" alt="FSM NPC AI 논문 상장" class="project-img"
-              style="object-fit: contain; image-rendering: auto;">
+              width="800" height="1000" loading="lazy" style="object-fit: contain; image-rendering: auto;">
           </div>
         </article>
 

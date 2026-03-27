@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          객체 수 증가에 따른 FPS 변화를 정밀하게 측정하여 FSM의 효율성을 입증하였으며,
                          <strong>2025 한국디지털콘텐츠학회 하계종합학술대회</strong>에서 기술적 완성도를 인정받아 <strong>동상</strong>을 수상하였습니다.`,
       read_paper: '논문 읽기 &rarr;',
+      nav_open: '메뉴 열기',
       contact_title: 'Get in Touch',
       contact_desc: '새로운 기회와 혁신적인 프로젝트 제안을 언제나 환영합니다.<br>아래 폼을 통해 메시지를 남겨주시거나 이메일로 연락주세요.',
       send_message: '메시지 전송',
@@ -130,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          By precisely measuring FPS changes according to the increase in the number of objects, the efficiency of FSM was proven.
                          Technological completeness was recognized with a <strong>Bronze Prize</strong> at the <strong>2025 Digital Content Society (DCS) Summer Conference</strong>.`,
       read_paper: 'Read Paper &rarr;',
+      nav_open: 'Open Menu',
       contact_title: 'Get in Touch',
       contact_desc: 'I always welcome new opportunities and innovative project proposals.<br>Please leave a message through the form below or contact me via email.',
       send_message: 'Send Message',
@@ -143,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('preferredLang', lang);
+    document.documentElement.lang = lang;
 
     // Update active button
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -157,11 +160,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Update aria-labels
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+      const key = el.dataset.i18nAria;
+      if (translations[lang][key]) {
+        el.setAttribute('aria-label', translations[lang][key]);
+      }
+    });
+
     // Reset roles for typewriter
     roles = translations[lang].roles;
     roleIdx = 0;
     charIdx = 0;
     isDeleting = false;
+    clearTimeout(typeWriterTimeout);
+    typeWriter();
   }
 
   // Language button event listeners
@@ -176,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Typewriter effect ────────────────────────────────
   let roles = translations[currentLang].roles;
   let roleIdx = 0, charIdx = 0, isDeleting = false;
+  let typeWriterTimeout = null;
   const roleEl = document.getElementById('role-text');
 
   function typeWriter() {
@@ -198,12 +212,11 @@ document.addEventListener('DOMContentLoaded', () => {
       roleIdx = (roleIdx + 1) % roles.length;
       delay = 500;
     }
-    setTimeout(typeWriter, delay);
+    typeWriterTimeout = setTimeout(typeWriter, delay);
   }
 
   // Initialize with saved language
   updateLanguage(currentLang);
-  typeWriter();
 
   // ── Scroll reveal (Intersection Observer) ─────────────
   const revealEls = document.querySelectorAll('.reveal');
@@ -281,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('button[type=submit]');
       const originalBtnText = btn.textContent;
 
-      btn.textContent = 'Sending...';
+      btn.textContent = 'Sending…';
       btn.style.pointerEvents = 'none';
       btn.style.opacity = '0.7';
 

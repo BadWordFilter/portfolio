@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       project1_tag1: '액션 플랫포머',
       project1_tag2: '퍼즐',
       project1_tag3: '레벨 디자인',
-      project2_summary: '정부 소속 서버를 방어하기 위해 23종의 해킹 퍼즐 및 선 잇기를 해결하며 장애물을 피하는 긴장감 넘치는 탄막 회피 게임입니다. (Steam / STOVE 출시)',
+      project2_summary: `정부 소속 서버를 방어하기 위해 23종의 해킹 퍼즐 및 선 잇기를 해결하며 장애물을 피하는 긴장감 넘치는 탄막 회피 게임입니다. (Steam / STOVE 출시)<br><br><strong>2024년 12월 STOVE 상품 판매량 8위 달성</strong>`,
       project2_tag1: '탄막 회피',
       project2_tag2: '캐주얼 퍼즐',
       project2_tag3: '레벨 디자인',
@@ -76,8 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       view_certificate_schu: '상장 보기 (PDF) &rarr;',
       project3_name: 'FSM 기반 NPC AI 성능 비교 연구',
       project3_summary: `Unity 엔진에서 FSM(유한 상태 기계)을 활용한 NPC AI의 성능을 정량적으로 분석하고 최적화 방안을 제시한 연구입니다.
-                         객체 수 증가에 따른 FPS 변화를 정밀하게 측정하여 FSM의 효율성을 입증하였으며,
-                         <strong>2025 한국디지털콘텐츠학회 하계종합학술대회</strong>에서 기술적 완성도를 인정받아 <strong>동상</strong>을 수상하였습니다.`,
+                         객체 수 증가에 따른 FPS 변화를 정밀하게 측정하여 FSM의 효율성을 입증하며 기술적 완성도를 인정받았습니다.<br><br><strong>2025 한국디지털콘텐츠학회 하계종합학술대회 동상 수상</strong>`,
       read_paper: '논문 읽기 &rarr;',
       nav_open: '메뉴 열기',
       contact_title: 'Get in Touch',
@@ -116,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
       project1_tag1: 'Action Platformer',
       project1_tag2: 'Puzzle',
       project1_tag3: 'Level Design',
-      project2_summary: 'A high-tension bullet-hell game where you solve 23 types of hacking puzzles and connect lines while avoiding obstacles to defend government servers. (Released on Steam / STOVE)',
+      project2_summary: `A high-tension bullet-hell game where you solve 23 types of hacking puzzles and connect lines while avoiding obstacles to defend government servers. (Released on Steam / STOVE)<br><br><strong>Reached 8th Place in STOVE Sales Rank (Dec 2024)</strong>`,
       project2_tag1: 'Bullet Hell',
       project2_tag2: 'Casual Puzzle',
       project2_tag3: 'Level Design',
@@ -128,8 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       view_certificate_schu: 'View Certificate (PDF) &rarr;',
       project3_name: 'Comparative Study on NPC AI Performance using FSM',
       project3_summary: `This study quantitatively analyzed the performance of NPC AI using FSM (Finite State Machine) in the Unity engine and proposed optimization methods.
-                         By precisely measuring FPS changes according to the increase in the number of objects, the efficiency of FSM was proven.
-                         Technological completeness was recognized with a <strong>Bronze Prize</strong> at the <strong>2025 Digital Content Society (DCS) Summer Conference</strong>.`,
+                         By precisely measuring FPS changes according to the increase in the number of objects, the efficiency of FSM was proven, recognizing its technological completeness.<br><br><strong>Bronze Prize at the 2025 Digital Content Society (DCS) Summer Conference</strong>`,
       read_paper: 'Read Paper &rarr;',
       nav_open: 'Open Menu',
       contact_title: 'Get in Touch',

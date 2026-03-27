@@ -32,10 +32,15 @@
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
+
 :focus:not(:focus-visible) {
   outline: none;
 }
-a, button, input, textarea {
+
+a,
+button,
+input,
+textarea {
   touch-action: manipulation;
 }
 
@@ -534,6 +539,9 @@ h3,
   transition: width 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+/* ────────────────────────────────────
+   Projects Section
+   ──────────────────────────────────── */
 /* ────────────────────────────────────
    Projects Section
    ──────────────────────────────────── */

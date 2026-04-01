@@ -22,12 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
+      const isOpen = navLinks.classList.contains('open');
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
     navLinks.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         hamburger.classList.remove('open');
         navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
       });
     });
   }
@@ -78,6 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
       project3_summary: `Unity 엔진에서 FSM(유한 상태 기계)을 활용한 NPC AI의 성능을 정량적으로 분석하고 최적화 방안을 제시한 연구입니다.
                          객체 수 증가에 따른 FPS 변화를 정밀하게 측정하여 FSM의 효율성을 입증하며 기술적 완성도를 인정받았습니다.<br><br><strong>2025 한국디지털콘텐츠학회 하계종합학술대회 동상 수상</strong>`,
       read_paper: '논문 읽기 &rarr;',
+      project_startup_name: '순천향대학교 제1회 로컬 창업동아리 아이디어 리그 경진대회 START-UP Track-1 - 은상 (Under-Shield)',
+      project_startup_summary: `기존 가드레일 하단에 간편하게 부착하는 방식으로, 전기차를 비롯한 무게중심이 낙은 차량의 <strong>하부 이탈(언더라이드, Underride)</strong>을 방지하는
+                               <strong>확장형 교통 안전 패널(A.U.P, Anti-Underride Panel)</strong>을 창업 아이디어로 제안하였습니다.
+                               운전자에게는 치명적 충돌 사고를 예방하고, 도로 관리 주체에게는 인프라 전면 교체 없이 적은 예산으로 최신 교통 안전망을 구축할 수 있는 솔루션으로
+                               순천향대학교 RISE사업단 주최 <strong>제1회 로컬 창업동아리 아이디어 리그 경진대회</strong> START-UP Track-1에서 <strong>은상</strong>을 수상하였습니다.`,
+      view_announcement: '공지사항 보기 &rarr;',
       nav_open: '메뉴 열기',
       contact_title: 'Get in Touch',
       contact_desc: '새로운 기회와 혁신적인 프로젝트 제안을 언제나 환영합니다.<br>아래 폼을 통해 메시지를 남겨주시거나 이메일로 연락주세요.',
@@ -129,6 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
       project3_summary: `This study quantitatively analyzed the performance of NPC AI using FSM (Finite State Machine) in the Unity engine and proposed optimization methods.
                          By precisely measuring FPS changes according to the increase in the number of objects, the efficiency of FSM was proven, recognizing its technological completeness.<br><br><strong>Bronze Prize at the 2025 Digital Content Society (DCS) Summer Conference</strong>`,
       read_paper: 'Read Paper &rarr;',
+      project_startup_name: 'SCH 1st Local Startup Club Idea League - START-UP Track-1 Silver Prize (Under-Shield)',
+      project_startup_summary: `Proposed <strong>Anti-Underride Panel (A.U.P, Under-Shield)</strong>, an add-on safety device attached to the bottom of existing guardrails to prevent vehicles with low centers of gravity — such as EVs — from <strong>underriding (slipping beneath)</strong> the barrier during collisions.
+                               The solution prevents fatal crashes for drivers while enabling road authorities to modernize traffic safety infrastructure at minimal cost without full replacement.
+                               Awarded the <strong>Silver Prize</strong> at the <strong>1st SCH Local Startup Club Idea League Competition</strong> START-UP Track-1, hosted by the SCH RISE Project Group.`,
+      view_announcement: 'View Announcement &rarr;',
       nav_open: 'Open Menu',
       contact_title: 'Get in Touch',
       contact_desc: 'I always welcome new opportunities and innovative project proposals.<br>Please leave a message through the form below or contact me via email.',

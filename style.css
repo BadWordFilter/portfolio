@@ -24,7 +24,7 @@
   --container-w: 1200px;
   --section-pad: 160px;
   --transition-smooth: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-  --transition-hover: color 0.4s ease-out, background-color 0.4s ease-out, border-color 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+  --transition-hover: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 /* Accessibility & Interaction Default Defaults */
@@ -137,6 +137,27 @@ h3,
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* prefers-reduced-motion: 애니메이션 비활성화 */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .reveal-on-load {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-img,
+  .image-frame img,
+  .placeholder-img {
+    transition: none;
   }
 }
 
@@ -542,9 +563,6 @@ h3,
 /* ────────────────────────────────────
    Projects Section
    ──────────────────────────────────── */
-/* ────────────────────────────────────
-   Projects Section
-   ──────────────────────────────────── */
 .projects-list {
   display: flex;
   flex-direction: column;
@@ -584,6 +602,7 @@ h3,
   font-size: clamp(2rem, 4vw, 3rem);
   font-family: var(--font-display);
   margin-bottom: 1.5rem;
+  text-wrap: balance;
 }
 
 .project-summary {
@@ -658,9 +677,19 @@ h3,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* 영역을 꽉 채우도록 설정 */
-  image-rendering: pixelated;
+  image-rendering: auto;
   transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* code 태그 스타일 */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.88em;
+  background-color: rgba(140, 122, 107, 0.1);
+  color: var(--accent);
+  padding: 0.15em 0.45em;
+  border-radius: 3px;
+  letter-spacing: 0;
 }
 
 .project-visual:hover .project-img {
@@ -728,7 +757,7 @@ h3,
   font-size: 1rem;
   color: var(--text-primary);
   outline: none;
-  transition: border-color var(--transition-hover);
+  transition: border-color 0.3s ease-out;
   resize: none;
 }
 

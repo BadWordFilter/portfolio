@@ -39,41 +39,41 @@
     <div class="nav-container">
       <a href="#hero" class="logo">HL.</a>
       <div style="display: flex; align-items: center;">
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li><a href="#about" data-i18n="nav_about">About</a></li>
           <li><a href="#skills" data-i18n="nav_expertise">Expertise</a></li>
           <li><a href="#projects" data-i18n="nav_work">Work</a></li>
           <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <div class="lang-switch">
-          <button class="lang-btn active" data-lang="ko">KO</button>
-          <span class="lang-separator">|</span>
-          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="ko" aria-label="한국어로 변경">KO</button>
+          <span class="lang-separator" aria-hidden="true">|</span>
+          <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
         </div>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="메뉴 열기" data-i18n-aria="nav_open" aria-controls="nav-links">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="hamburger" id="hamburger" aria-label="메뉴 열기" data-i18n-aria="nav_open" aria-controls="nav-links" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero">
+  <section id="hero" class="hero" style="scroll-margin-top: 80px;">
     <div class="hero-content reveal-on-load">
       <p class="hero-eyebrow" data-i18n="hero_eyebrow">Portfolio 2026</p>
       <h1 class="hero-title" data-i18n="hero_title">Hakju<br>Lee.</h1>
       <p class="hero-subtitle" data-i18n="hero_subtitle">Meticulous Engineering meets Elegant Design.</p>
       <div class="hero-roles">
-        <span id="role-text" aria-live="polite">Founder & CEO, RAMIC STUDIO</span>
-        <span class="cursor">|</span>
+        <span id="role-text" aria-live="polite">Founder &amp; CEO, RAMIC STUDIO</span>
+        <span class="cursor" aria-hidden="true">|</span>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section" style="scroll-margin-top: 80px;">
     <div class="section-container">
       <div class="about-grid">
         <div class="about-text reveal">
@@ -111,7 +111,7 @@
   </section>
 
   <!-- Expertise (Skills) Section -->
-  <section id="skills" class="section">
+  <section id="skills" class="section" style="scroll-margin-top: 80px;">
     <div class="section-container">
       <div class="section-header reveal">
         <h2 class="section-title">02. <br><span data-i18n="skills_title">Expertise</span></h2>
@@ -218,7 +218,7 @@
   </section>
 
   <!-- Projects (Work) Section -->
-  <section id="projects" class="section">
+  <section id="projects" class="section" style="scroll-margin-top: 80px;">
     <div class="section-container">
       <div class="section-header reveal">
         <h2 class="section-title">03. <br><span data-i18n="projects_title">Selected Work</span></h2>
@@ -329,12 +329,36 @@
               width="800" height="1000" loading="lazy" style="object-fit: contain; image-rendering: auto;">
           </div>
         </article>
+
+        <!-- Project Award: SCH Local Startup Club Idea League - Silver Prize -->
+        <article class="project-item reveal" style="display: block;">
+          <div class="project-info" style="max-width: 100%;">
+            <h3 class="project-name" data-i18n="project_startup_name">순천향대학교 제1회 로컬 창업동아리 아이디어 리그 경진대회 START-UP Track-1 - 은상 (Under-Shield)
+            </h3>
+            <p class="project-summary" data-i18n="project_startup_summary">
+              기존 가드레일 하단에 간편하게 부착하는 방식으로, 전기차를 비롯한 무게중심이 낮은 차량의 <strong>하부 이탈(언더라이드, Underride)</strong>을 방지하는
+              <strong>확장형 교통 안전 패널(A.U.P, Anti-Underride Panel)</strong>을 창업 아이디어로 제안하였습니다.
+              운전자에게는 치명적 충돌 사고를 예방하고, 도로 관리 주체에게는 인프라 전면 교체 없이 적은 예산으로 최신 교통 안전망을 구축할 수 있는 솔루션으로
+              순천향대학교 RISE사업단 주최 <strong>제1회 로컬 창업동아리 아이디어 리그 경진대회</strong> START-UP Track-1에서 <strong>은상</strong>을 수상하였습니다.
+            </p>
+            <ul class="project-stack">
+              <li>Traffic Safety</li>
+              <li>Anti-Underride Panel</li>
+              <li>Add-on Infrastructure</li>
+              <li>B2G / B2B</li>
+            </ul>
+            <div style="display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: wrap;">
+              <a href="https://home.sch.ac.kr/sch/06/010100.jsp?mode=view&article_no=20260327152930236098&board_wrapper=%2Fsch%2F06%2F010100.jsp&pager.offset=0&board_no=20090723152156588979"
+                class="project-link" target="_blank" data-i18n="view_announcement">공지사항 보기 &rarr;</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact" class="section" style="scroll-margin-top: 80px;">
     <div class="section-container">
       <div class="contact-grid">
         <div class="contact-text reveal">
@@ -348,15 +372,15 @@
           <form id="contact-form" class="editorial-form" action="https://formsubmit.co/hakju.lee@ramicstudio.com"
             method="POST">
             <div class="input-group">
-              <input type="text" id="name" name="name" required placeholder=" " aria-label="이름">
+              <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
               <label for="name">Name</label>
             </div>
             <div class="input-group">
-              <input type="email" id="email" name="email" required placeholder=" " aria-label="이메일">
+              <input type="email" id="email" name="email" required placeholder=" " autocomplete="email" spellcheck="false" inputmode="email">
               <label for="email">Email</label>
             </div>
             <div class="input-group">
-              <textarea id="message" name="message" rows="4" required placeholder=" " aria-label="메시지 내용"></textarea>
+              <textarea id="message" name="message" rows="4" required placeholder=" " autocomplete="off"></textarea>
               <label for="message">Message</label>
             </div>
             <button type="submit" class="submit-btn" data-i18n="send_message">Send Message</button>

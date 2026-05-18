@@ -40,15 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
     ko: {
       nav_about: 'About',
       nav_expertise: 'Expertise',
+      nav_experience: 'Experience',
       nav_work: 'Work',
       nav_contact: 'Contact',
+      skills_filter_hint: '🔍 태그를 클릭하면 해당 기술이 쓰인 프로젝트만 표시됩니다.',
+      exp_title: 'Experience & Leadership',
+      exp_ramic_desc: '고등학교 2학년부터 스튜디오를 설립하여 <strong>기획 → 개발 → 퍼블리싱</strong>까지 풀 사이클을 직접 운영하고 있습니다. Steam &amp; STOVE에 상업 게임 2편을 출시하였으며, 매출 데이터와 유저 피드백을 기반으로 업데이트 주기를 관리합니다.',
+      exp_ramic_link: 'Steam 스토어 →',
+      exp_malgeum_desc: '수제 키캡 브랜드 <strong>말금(MALGEUM)</strong>을 창업하여 브랜딩, 제품 기획, 온라인 마케팅 전반을 총괄합니다. 개발자 관점에서 브랜드 웹사이트를 직접 구축하고 고객 경험 설계부터 론칭 전략까지 이끌고 있습니다.',
+      exp_hmbg_desc: '<strong>단순 학습을 넘어 실제 시장에 출시</strong>하는 것을 목표로 동아리를 이끌고 있습니다. 회장의 Steam/STOVE 출시 노하우를 공유하는 퍼블리싱 멘토링, 분기별 빌드 데이, 신입생 대상 파이썬 튜터링을 운영합니다.',
+      badge_new: '🆕 Beta 2025.05',
+      badge_stove8: '🏆 STOVE 판매량 8위',
+      project_nplh_summary: '<strong>[문제]</strong> 5일 밤 유령의 공격을 막아내며 생존하는 서바이벌 호러 게임. 협업 개발자 Ce_r4mic과 함께 제작하였습니다.<br><br><strong>[기술]</strong> Unity + C#으로 개발. 유령 AI 행동 패턴을 FSM으로 설계하여 밤마다 점층적 위협 강도를 구현하였습니다.',
       hero_eyebrow: 'Portfolio 2026',
       hero_title: 'Hakju<br>Lee.',
       hero_subtitle: 'Meticulous Engineering meets Elegant Design.',
       about_title: 'About Me',
-      about_desc: `<strong>RAMIC STUDIO</strong>를 창업하여 이끌고 있는 대표, <strong>이학주</strong>입니다.<br><br>
-                   저는 게임을 만들 때 <em>"왜 재미없는가"</em>를 먼저 묻습니다. 기획 의도를 정확히 파악한 뒤, 퍼포먼스 병목을 데이터로 측정하고 FSM·오브젝트 풀링 등 적합한 아키텍처를 선택해 문제를 해결합니다.<br><br>
-                   메모리 프로파일링으로 GC Spike를 제거하거나, 셰이더 최적화로 드로우콜을 줄이는 것처럼 눈에 보이지 않는 영역까지 책임지며, 팀의 비전을 기술로 연결하여 하나의 '압도적인 세계'를 만드는 데 집중합니다.`,
+      about_desc: `고등학교 2학년부터 <strong>RAMIC STUDIO</strong>를 창업하여 기획·개발·Steam·STOVE 출시까지 <em>풀 사이클(Full-cycle)</em>를 직접 경험하며 대표로서 성장해 온 <strong>이학주</strong>입니다.<br><br>
+                   게임을 만들 때 <em>"왜 재미없는가"</em>를 먼저 묻습니다. 퍼포먼스 병목을 데이터로 측정하고 FSM·오브젝트 풀링 등 적합한 아키텍처로 문제를 해결합니다. 이 접근법은 FSM 기반 NPC AI 성능을 정량 분석한 학술 연구로도 이어져 <strong>한국디지털콘텐츠학회 동상</strong>을 수상했습니다.<br><br>
+                   눈에 보이지 않는 최적화부터 시장에서 검증된 출시 경험까지 — 기술과 비즈니스 양쪽을 잋는 개발자입니다.`,
       about_info_name: 'Name',
       about_info_name_val: '이학주 (Founder & CEO, RAMIC STUDIO)',
       about_info_location: 'Location',
@@ -135,15 +145,21 @@ document.addEventListener('DOMContentLoaded', () => {
     en: {
       nav_about: 'About',
       nav_expertise: 'Expertise',
+      nav_experience: 'Experience',
       nav_work: 'Work',
       nav_contact: 'Contact',
-      hero_eyebrow: 'Portfolio 2026',
-      hero_title: 'Hakju<br>Lee.',
-      hero_subtitle: 'Meticulous Engineering meets Elegant Design.',
-      about_title: 'About Me',
-      about_desc: `I'm <strong>Hakju Lee</strong>, founder and CEO of <strong>RAMIC STUDIO</strong>.<br><br>
-                   When building games, I start by asking <em>"Why isn't it fun?"</em> — then measure performance bottlenecks with data and choose the right architecture (FSM, Object Pooling, GPU Instancing) to fix the actual problem.<br><br>
-                   From eliminating GC spikes via memory profiling to reducing draw calls through shader optimization, I take responsibility for what users don't see — so what they do see feels truly alive.`,
+      skills_filter_hint: '🔍 Click a tag to filter projects by technology.',
+      exp_title: 'Experience & Leadership',
+      exp_ramic_desc: 'Founded the studio in high school and have been operating the full cycle — <strong>planning → development → publishing</strong> — ever since. Released 2 commercial games on Steam &amp; STOVE, managing update cadence based on sales data and user feedback.',
+      exp_ramic_link: 'Steam Store →',
+      exp_malgeum_desc: 'Founded <strong>MALGEUM</strong>, a handcrafted keycap brand, overseeing branding, product planning, and online marketing. Built the brand website from scratch as a developer and leads everything from customer experience design to launch strategy.',
+      exp_hmbg_desc: 'Leading the club with a goal of <strong>shipping real games to market</strong>, not just learning. Runs publishing mentoring (sharing Steam/STOVE release know-how), quarterly build days, and Python tutoring for freshmen.',
+      badge_new: '🆕 Beta 2025.05',
+      badge_stove8: '🏆 STOVE Sales Rank #8',
+      project_nplh_summary: '<strong>[Concept]</strong> A survival horror game where you must endure 5 nights of ghost attacks. Built in collaboration with Ce_r4mic.<br><br><strong>[Tech]</strong> Developed in Unity + C#. Ghost AI behavior patterns designed with FSM to deliver escalating threat intensity each night.',
+      about_desc: `Founded <strong>RAMIC STUDIO</strong> in high school and have grown as CEO, directly experiencing the full cycle — planning, development, Steam &amp; STOVE publishing.<br><br>
+                   When building games, I start by asking <em>"Why isn't it fun?"</em> — then measure performance bottlenecks with data and choose the right architecture (FSM, Object Pooling) to fix the actual problem. This approach led to an academic study on FSM-based NPC AI performance, earning a <strong>Bronze Prize at the DCS Summer Conference</strong>.<br><br>
+                   From invisible optimizations to market-validated shipping experience — a developer who bridges both technology and business.`,
       about_info_name: 'Name',
       about_info_name_val: 'Hakju Lee (Founder & CEO, RAMIC STUDIO)',
       about_info_location: 'Location',
@@ -348,6 +364,36 @@ document.addEventListener('DOMContentLoaded', () => {
   window.animateSkillBars = animateSkillBars;
 
   revealEls.forEach(el => observer.observe(el));
+
+  // ── Tech Filter Chips ─────────────────────────────────
+  const techChips = document.querySelectorAll('.tech-chip');
+  const projectItems = document.querySelectorAll('#projects-list .project-item');
+
+  if (techChips.length && projectItems.length) {
+    techChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const filter = chip.dataset.filter;
+
+        // Update active chip
+        techChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+
+        // Filter projects
+        projectItems.forEach(item => {
+          if (filter === 'all') {
+            item.classList.remove('filtered-out');
+          } else {
+            const tech = item.dataset.tech || '';
+            if (tech.includes(filter)) {
+              item.classList.remove('filtered-out');
+            } else {
+              item.classList.add('filtered-out');
+            }
+          }
+        });
+      });
+    });
+  }
 
   // ── Active nav link highlight ────────────────────────
   const sections = document.querySelectorAll('section[id]');

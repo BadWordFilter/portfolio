@@ -42,6 +42,7 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="#about" data-i18n="nav_about">About</a></li>
           <li><a href="#skills" data-i18n="nav_expertise">Expertise</a></li>
+          <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
           <li><a href="#projects" data-i18n="nav_work">Work</a></li>
           <li><a href="#activities" data-i18n="nav_activities">Activities</a></li>
           <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
@@ -81,9 +82,9 @@
         <div class="about-text reveal">
           <h2 class="section-title">01. <br><span data-i18n="about_title">About Me</span></h2>
           <p class="about-desc" data-i18n="about_desc">
-            <strong>RAMIC STUDIO</strong>를 창업하여 이끌고 있는 대표, <strong>이학주</strong>입니다.<br><br>
-            저는 게임을 만들 때 <em>"왜 재미없는가"</em>를 먼저 묻습니다. 기획 의도를 정확히 파악한 뒤, 퍼포먼스 병목을 데이터로 측정하고 FSM·오브젝트 풀링 등 적합한 아키텍처를 선택해 문제를 해결합니다.<br><br>
-            메모리 프로파일링으로 GC Spike를 제거하거나, 셰이더 최적화로 드로우콜을 줄이는 것처럼 눈에 보이지 않는 영역까지 책임지며, 팀의 비전을 기술로 연결하여 하나의 '압도적인 세계'를 만드는 데 집중합니다.
+            고등학교 2학년부터 <strong>RAMIC STUDIO</strong>를 창업하여 기획·개발·Steam·STOVE 출시까지 <em>풀 사이클(Full-cycle)</em>을 직접 경험하며 대표로서 성장해 온 <strong>이학주</strong>입니다.<br><br>
+            게임을 만들 때 <em>"왜 재미없는가"</em>를 먼저 묻습니다. 퍼포먼스 병목을 데이터로 측정하고 FSM·오브젝트 풀링 등 적합한 아키텍처로 문제를 해결합니다. 이 접근법은 FSM 기반 NPC AI 성능을 정량 분석한 학술 연구로도 이어져 <strong>한국디지털콘텐츠학회 동상</strong>을 수상했습니다.<br><br>
+            눈에 보이지 않는 최적화부터 시장에서 검증된 출시 경험까지 — 기술과 비즈니스 양쪽을 잇는 개발자입니다.
           </p>
           <div class="about-info">
             <div class="info-item">
@@ -117,29 +118,35 @@
     <div class="section-container">
       <div class="section-header reveal">
         <h2 class="section-title">02. <br><span data-i18n="skills_title">Expertise</span></h2>
+        <p class="skills-filter-hint reveal" data-i18n="skills_filter_hint">태그를 클릭하면 해당 기술이 쓰인 프로젝트만 표시됩니다.</p>
       </div>
       <div class="skills-grid">
+        <!-- Clickable Tech Filter Chips -->
+        <div class="tech-filter-chips reveal" id="tech-filter-chips" role="group" aria-label="기술 필터">
+          <button class="tech-chip active" data-filter="all">All</button>
+          <button class="tech-chip" data-filter="unity">Unity</button>
+          <button class="tech-chip" data-filter="unreal">Unreal Engine</button>
+          <button class="tech-chip" data-filter="cpp">C++</button>
+          <button class="tech-chip" data-filter="csharp">C#</button>
+          <button class="tech-chip" data-filter="python">Python</button>
+          <button class="tech-chip" data-filter="blender">Blender</button>
+        </div>
+
         <!-- Programming Languages -->
         <div class="skill-column reveal">
           <h3 class="skill-heading" data-i18n="skill_languages">Programming Languages</h3>
           <div class="skill-group">
             <div class="skill-bar-container">
               <div class="skill-info"><span>C#</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="100"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="100"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span>C++</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="100"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="100"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span>Python</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="100"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="100"></div></div>
             </div>
           </div>
         </div>
@@ -149,21 +156,15 @@
           <div class="skill-group">
             <div class="skill-bar-container">
               <div class="skill-info"><span>Unity</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="100"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="100"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span>Unreal Engine</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="80"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span>RPG Maker</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="60"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="60"></div></div>
             </div>
           </div>
         </div>
@@ -173,21 +174,15 @@
           <div class="skill-group">
             <div class="skill-bar-container">
               <div class="skill-info"><span data-i18n="skill_modeling">3D Modeling</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="100"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="100"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span data-i18n="skill_texturing">PBR Texturing</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="80"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span data-i18n="skill_vfx">Shader & VFX</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="60"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="60"></div></div>
             </div>
           </div>
         </div>
@@ -197,24 +192,87 @@
           <div class="skill-group">
             <div class="skill-bar-container">
               <div class="skill-info"><span>Blender</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="100"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="100"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span>GitHub</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="80"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80"></div></div>
             </div>
             <div class="skill-bar-container">
               <div class="skill-info"><span data-i18n="skill_profiling">Memory Profiling</span></div>
-              <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-percent="80"></div>
-              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80"></div></div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Leadership Section -->
+  <section id="experience" class="section" style="scroll-margin-top: 80px;">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">03. <br><span data-i18n="exp_title">Experience &amp; Leadership</span></h2>
+      </div>
+      <div class="experience-grid">
+
+        <!-- RAMIC STUDIO -->
+        <article class="exp-card exp-card--featured reveal" data-tech="unity csharp blender">
+          <div class="exp-card-header">
+            <div>
+              <span class="exp-badge exp-badge--ceo">Founder &amp; CEO</span>
+              <h3 class="exp-title">RAMIC STUDIO</h3>
+            </div>
+            <span class="exp-period">2022 — Present</span>
+          </div>
+          <p class="exp-desc" data-i18n="exp_ramic_desc">고등학교 2학년부터 스튜디오를 설립하여 <strong>기획 → 개발 → 퍼블리싱</strong>까지 풀 사이클을 직접 운영하고 있습니다. Steam &amp; STOVE에 상업 게임 2편을 출시하였으며, 매출 데이터와 유저 피드백을 기반으로 업데이트 주기를 관리합니다.</p>
+          <ul class="exp-tags">
+            <li>Full-Cycle Dev</li>
+            <li>Steam Publishing</li>
+            <li>STOVE Publishing</li>
+            <li>Unity / C#</li>
+          </ul>
+          <a href="https://store.steampowered.com/search/?developer=RAMIC+STUDIO" class="project-link" target="_blank" data-i18n="exp_ramic_link">Steam 스토어 →</a>
+        </article>
+
+        <!-- MALGEUM -->
+        <article class="exp-card reveal" data-tech="biz">
+          <div class="exp-card-header">
+            <div>
+              <span class="exp-badge exp-badge--founder">Founder &amp; CEO</span>
+              <h3 class="exp-title">MALGEUM</h3>
+            </div>
+            <span class="exp-period">2025 — Present</span>
+          </div>
+          <p class="exp-desc" data-i18n="exp_malgeum_desc">수제 키캡 브랜드 <strong>말금(MALGEUM)</strong>을 창업하여 브랜딩, 제품 기획, 온라인 마케팅 전반을 총괄합니다. 개발자 관점에서 브랜드 웹사이트를 직접 구축하고 고객 경험 설계부터 론칭 전략까지 이끌고 있습니다.</p>
+          <ul class="exp-tags">
+            <li>Brand Strategy</li>
+            <li>Web Dev</li>
+            <li>Product Planning</li>
+            <li>Marketing</li>
+          </ul>
+          <a href="https://malgeumkeys.com" class="project-link" target="_blank">malgeumkeys.com →</a>
+        </article>
+
+        <!-- HMBG -->
+        <article class="exp-card reveal" data-tech="unity csharp">
+          <div class="exp-card-header">
+            <div>
+              <span class="exp-badge exp-badge--lead">Club President</span>
+              <h3 class="exp-title">HMBG 햄부기 게임개발동아리</h3>
+            </div>
+            <span class="exp-period">2026 — Present</span>
+          </div>
+          <p class="exp-desc" data-i18n="exp_hmbg_desc"><strong>단순 학습을 넘어 실제 시장에 출시</strong>하는 것을 목표로 동아리를 이끌고 있습니다. 회장의 Steam/STOVE 출시 노하우를 공유하는 퍼블리싱 멘토링, 분기별 빌드 데이, 신입생 대상 파이썬 튜터링을 운영합니다. 2025 SCHU AI·SW Festival 최우수상 수상 프로젝트(MAYHEM)를 함께 제작했습니다.</p>
+          <ul class="exp-tags">
+            <li>Team Leadership</li>
+            <li>Publishing Mentoring</li>
+            <li>Python Tutoring</li>
+            <li>Interdisciplinary</li>
+          </ul>
+          <a href="https://hmbg.kr" class="project-link" target="_blank">hmbg.kr →</a>
+        </article>
+
       </div>
     </div>
   </section>
@@ -223,12 +281,33 @@
   <section id="projects" class="section" style="scroll-margin-top: 80px;">
     <div class="section-container">
       <div class="section-header reveal">
-        <h2 class="section-title">03. <br><span data-i18n="projects_title">Selected Work</span></h2>
+        <h2 class="section-title">04. <br><span data-i18n="projects_title">Selected Work</span></h2>
       </div>
 
-      <div class="projects-list">
+      <div class="projects-list" id="projects-list">
+        <!-- Project 0: No Place Like Home (최신) -->
+        <article class="project-item reveal" data-tech="unity csharp">
+          <div class="project-info">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; flex-wrap:wrap;">
+              <h3 class="project-name" style="margin-bottom:0;">No Place Like Home</h3>
+              <span class="proj-badge proj-badge--new" data-i18n="badge_new">🆕 Beta 2025.05</span>
+            </div>
+            <p class="project-summary" data-i18n="project_nplh_summary"><strong>[문제]</strong> 5일 밤 동안 유령의 공격을 막아내며 생존하는 서바이벌 호러 게임. 협업 개발자 Ce_r4mic과 함께 제작하였습니다.<br><br><strong>[기술]</strong> Unity + C#으로 개발. 유령 AI 행동 패턴을 FSM으로 설계하여 밤마다 점층적 위협 강도를 구현하였습니다.</p>
+            <ul class="project-stack">
+              <li>Survival Horror</li>
+              <li>Unity</li>
+              <li>C#</li>
+              <li>FSM AI</li>
+            </ul>
+            <a href="https://noplacelike2026.itch.io/noplacelikehome" class="project-link" target="_blank">itch.io →</a>
+          </div>
+          <div class="project-visual">
+            <div class="placeholder-img">No Place<br>Like Home</div>
+          </div>
+        </article>
+
         <!-- Project 1 -->
-        <article class="project-item reveal">
+        <article class="project-item reveal" data-tech="unity csharp">
           <div class="project-info">
             <h3 class="project-name">PROJECT : GENESIS</h3>
             <p class="project-summary" data-i18n="project1_summary">기억을 잃은 연구 시설에서 AI의 지시에 따라 다양한 기믹의 15개 퍼즐 스테이지를 돌파하는
@@ -252,9 +331,12 @@
         </article>
 
         <!-- Project 2 -->
-        <article class="project-item reveal">
+        <article class="project-item reveal" data-tech="unity csharp">
           <div class="project-info">
-            <h3 class="project-name">Hack.ing</h3>
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem; flex-wrap:wrap;">
+              <h3 class="project-name" style="margin-bottom:0;">Hack.ing</h3>
+              <span class="proj-badge proj-badge--rank" data-i18n="badge_stove8">🏆 STOVE 판매량 8위</span>
+            </div>
             <p class="project-summary" data-i18n="project2_summary">정부 소속 서버를 방어하기 위해 23종의 해킹 퍼즐 및 선 잇기를 해결하며 장애물을 피하는
               긴장감 넘치는 탄막 회피 게임입니다. (Steam /
               STOVE 출시)</p>
@@ -276,7 +358,7 @@
         </article>
 
         <!-- Project 3: Research & Award -->
-        <article class="project-item reveal">
+        <article class="project-item reveal" data-tech="unity csharp">
           <div class="project-info">
             <h3 class="project-name" data-i18n="project3_name">FSM 기반 NPC AI 성능 비교 연구</h3>
             <p class="project-summary" data-i18n="project3_summary">Unity 엔진에서 FSM(유한 상태 기계)을 활용한 NPC AI의 성능을 정량적으로 분석하고
@@ -303,7 +385,7 @@
         </article>
 
         <!-- Project Award: SCHU AI·SW Festival - MAYHEM -->
-        <article class="project-item reveal">
+        <article class="project-item reveal" data-tech="unity csharp">
           <div class="project-info">
             <h3 class="project-name" data-i18n="project_award_name">2025 SCHU AI·SW Festival 게임개발경진대회 - 최우수상 (MAYHEM)
             </h3>
@@ -362,7 +444,7 @@
         </article>
 
         <!-- Project Award: SCH Local Startup Club Idea League - Silver Prize -->
-        <article class="project-item reveal">
+        <article class="project-item reveal" data-tech="unreal cpp">
           <div class="project-info">
             <h3 class="project-name" data-i18n="project_startup_name">순천향대학교 제1회 로컬 창업동아리 아이디어 리그 경진대회 START-UP Track-1
               - 은상 (Under-Shield)
@@ -399,7 +481,7 @@
   <section id="activities" class="section" style="scroll-margin-top: 80px;">
     <div class="section-container">
       <div class="section-header reveal">
-        <h2 class="section-title">04. <br><span data-i18n="activities_title">Activities</span></h2>
+        <h2 class="section-title">05. <br><span data-i18n="activities_title">Activities</span></h2>
       </div>
       <div class="activities-grid">
 

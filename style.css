@@ -714,6 +714,140 @@ code {
 }
 
 /* ────────────────────────────────────
+   Activities Section
+   ──────────────────────────────────── */
+.activities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+@media (min-width: 900px) {
+  .activities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+}
+
+.activities-col-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.activity-card {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line-color);
+  transition: var(--transition-hover);
+  position: relative;
+}
+
+.activity-card::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 2rem;
+  width: 3px;
+  height: 0;
+  background-color: var(--accent);
+  transition: height 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.activity-card:hover::before {
+  height: calc(100% - 4rem);
+}
+
+.activity-card--past {
+  opacity: 0.7;
+}
+
+.activity-card--past:hover {
+  opacity: 1;
+}
+
+.activity-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.activity-status {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.activity-status--current {
+  background-color: rgba(140, 122, 107, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(140, 122, 107, 0.3);
+}
+
+.activity-status--past {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--line-color);
+}
+
+.activity-period {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.activity-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+  color: var(--text-primary);
+}
+
+.activity-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.activity-desc strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.activity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.activity-tags li {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--line-color);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  transition: var(--transition-hover);
+}
+
+.activity-card:hover .activity-tags li {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ────────────────────────────────────
    Contact Section
    ──────────────────────────────────── */
 .contact-grid {

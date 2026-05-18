@@ -43,6 +43,7 @@
           <li><a href="#about" data-i18n="nav_about">About</a></li>
           <li><a href="#skills" data-i18n="nav_expertise">Expertise</a></li>
           <li><a href="#projects" data-i18n="nav_work">Work</a></li>
+          <li><a href="#activities" data-i18n="nav_activities">Activities</a></li>
           <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <div class="lang-switch">
@@ -80,9 +81,9 @@
         <div class="about-text reveal">
           <h2 class="section-title">01. <br><span data-i18n="about_title">About Me</span></h2>
           <p class="about-desc" data-i18n="about_desc">
-            플레이어의 몰입감과 경험을 최우선으로 생각하며 <strong>RAMIC STUDIO</strong>를 창업하여 이끌고 있는 대표, <strong>이학주</strong>입니다.<br><br>
-            기획의 의도를 정확하게 파악하고, 이를 극한의 성능과 단단한 아키텍처로 구현해내는 데 자부심을 느낍니다.
-            눈에 보이지 않는 최적화부터 화면 속 생동감 넘치는 연출까지, 팀의 비전을 기술로 연결하여 하나의 '압도적인 세계'를 만드는 데 집중하고 있습니다.
+            <strong>RAMIC STUDIO</strong>를 창업하여 이끌고 있는 대표, <strong>이학주</strong>입니다.<br><br>
+            저는 게임을 만들 때 <em>"왜 재미없는가"</em>를 먼저 묻습니다. 기획 의도를 정확히 파악한 뒤, 퍼포먼스 병목을 데이터로 측정하고 FSM·오브젝트 풀링 등 적합한 아키텍처를 선택해 문제를 해결합니다.<br><br>
+            메모리 프로파일링으로 GC Spike를 제거하거나, 셰이더 최적화로 드로우콜을 줄이는 것처럼 눈에 보이지 않는 영역까지 책임지며, 팀의 비전을 기술로 연결하여 하나의 '압도적인 세계'를 만드는 데 집중합니다.
           </p>
           <div class="about-info">
             <div class="info-item">
@@ -394,12 +395,107 @@
     </div>
   </section>
 
+  <!-- Activities Section -->
+  <section id="activities" class="section" style="scroll-margin-top: 80px;">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">04. <br><span data-i18n="activities_title">Activities</span></h2>
+      </div>
+      <div class="activities-grid">
+
+        <!-- 교내 활동 -->
+        <div class="activities-column reveal">
+          <h3 class="activities-col-heading" data-i18n="activities_oncampus">On-Campus</h3>
+
+          <!-- CRC 센터 인턴 -->
+          <div class="activity-card">
+            <div class="activity-card-header">
+              <span class="activity-status activity-status--current" data-i18n="status_current">Current</span>
+              <span class="activity-period">2026 —</span>
+            </div>
+            <h4 class="activity-title" data-i18n="activity_crc_title">CRC 센터 기능팀 인턴</h4>
+            <p class="activity-desc" data-i18n="activity_crc_desc">순천향대학교 CRC 센터 기능팀에서 인턴으로 근무하며 실무 역량을 쌓고 있습니다.</p>
+            <ul class="activity-tags">
+              <li data-i18n="activity_crc_tag1">기능팀</li>
+              <li data-i18n="activity_crc_tag2">실무 인턴십</li>
+            </ul>
+          </div>
+
+          <!-- 2과대 + 법제사법위원회 -->
+          <div class="activity-card">
+            <div class="activity-card-header">
+              <span class="activity-status activity-status--current" data-i18n="status_current">Current</span>
+              <span class="activity-period">2026 —</span>
+            </div>
+            <h4 class="activity-title" data-i18n="activity_rep2_title">메타버스&amp;게임학과 2학년 과대표 · 법제사법위원회 위원장</h4>
+            <p class="activity-desc" data-i18n="activity_rep2_desc">학과 2학년 대표로서 학생과 학교를 잇는 가교 역할을 수행하며, 동시에 법제사법위원회 위원장으로서 학생 자치 규정 및 안건을 심의·의결합니다.</p>
+            <ul class="activity-tags">
+              <li data-i18n="activity_rep2_tag1">학생 대표</li>
+              <li data-i18n="activity_rep2_tag2">학생 자치</li>
+              <li data-i18n="activity_rep2_tag3">규정 심의</li>
+            </ul>
+          </div>
+
+          <!-- 1과대 -->
+          <div class="activity-card activity-card--past">
+            <div class="activity-card-header">
+              <span class="activity-status activity-status--past" data-i18n="status_past">Completed</span>
+              <span class="activity-period">2025</span>
+            </div>
+            <h4 class="activity-title" data-i18n="activity_rep1_title">메타버스&amp;게임학과 1학년 과대표</h4>
+            <p class="activity-desc" data-i18n="activity_rep1_desc">학과 신입생을 대표하여 학생 자치 활동에 참여하고 학과 행사 및 소통을 주도했습니다.</p>
+            <ul class="activity-tags">
+              <li data-i18n="activity_rep1_tag1">학생 대표</li>
+              <li data-i18n="activity_rep1_tag2">학생 자치</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 교외 활동 -->
+        <div class="activities-column reveal">
+          <h3 class="activities-col-heading" data-i18n="activities_offcampus">Off-Campus</h3>
+
+          <!-- G-LAMP -->
+          <div class="activity-card">
+            <div class="activity-card-header">
+              <span class="activity-status activity-status--current" data-i18n="status_current">Current</span>
+              <span class="activity-period">2026 —</span>
+            </div>
+            <h4 class="activity-title" data-i18n="activity_glamp_title">순천향대학교 G-LAMP 1기 LAMP 서포터즈</h4>
+            <p class="activity-desc" data-i18n="activity_glamp_desc"><strong>[역할]</strong> G-LAMP 사업단 1기 공식 홍보 서포터즈.<br><strong>[기여]</strong> 카드뉴스·숏폼 영상 등 SNS 최적화 콘텐츠를 기획·제작하여 기초과학을 대중과 연결.</p>
+            <ul class="activity-tags">
+              <li data-i18n="activity_glamp_tag1">홍보 서포터즈</li>
+              <li data-i18n="activity_glamp_tag2">콘텐츠 기획·제작</li>
+              <li data-i18n="activity_glamp_tag3">기초과학 대중화</li>
+            </ul>
+          </div>
+
+          <!-- 스타트업 경진대회 -->
+          <div class="activity-card activity-card--past">
+            <div class="activity-card-header">
+              <span class="activity-status activity-status--past" data-i18n="status_past">Completed</span>
+              <span class="activity-period">2026</span>
+            </div>
+            <h4 class="activity-title" data-i18n="activity_startup_title">제1회 로컬 창업동아리 아이디어 리그 START-UP Track-1 — 은상</h4>
+            <p class="activity-desc" data-i18n="activity_startup_desc"><strong>[문제]</strong> 전기차 언더라이드 사고 위험 + 높은 가드레일 교체 비용.<br><strong>[해결]</strong> 볼트 체결 방식 확장형 교통 안전 패널(A.U.P)로 최소 예산 해결책 제안 → <strong>은상</strong> 수상.</p>
+            <ul class="activity-tags">
+              <li>Traffic Safety</li>
+              <li>B2G / B2B</li>
+              <li data-i18n="activity_startup_tag">창업 아이디어</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="section" style="scroll-margin-top: 80px;">
     <div class="section-container">
       <div class="contact-grid">
         <div class="contact-text reveal">
-          <h2 class="section-title">04. <br><span data-i18n="contact_title">Get in Touch</span></h2>
+          <h2 class="section-title">05. <br><span data-i18n="contact_title">Get in Touch</span></h2>
           <p class="contact-desc" data-i18n="contact_desc">
             새로운 기회와 혁신적인 프로젝트 제안을 언제나 환영합니다.<br>
             아래 폼을 통해 메시지를 남겨주시거나 이메일로 연락주세요.

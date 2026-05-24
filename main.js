@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       exp_title: 'Experience & Leadership',
       exp_ramic_desc: '고등학교 2학년부터 스튜디오를 설립하여 <strong>기획 → 개발 → 퍼블리싱</strong>까지 풀 사이클을 직접 운영하고 있습니다. Steam &amp; STOVE에 상업 게임 2편을 출시하였으며, 매출 데이터와 유저 피드백을 기반으로 업데이트 주기를 관리합니다.',
       exp_ramic_link: 'Steam 스토어 →',
-      exp_malgeum_desc: '수제 키캡 브랜드 <strong>말금(MALGEUM)</strong>을 창업하여 브랜딩, 제품 기획, 온라인 마케팅 전반을 총괄합니다. 개발자 관점에서 브랜드 웹사이트를 직접 구축하고 고객 경험 설계부터 론칭 전략까지 이끌고 있습니다.',
+      exp_malgeum_desc: '수제 키캡 브랜드 <strong>맑음(MALGEUM)</strong>을 창업하여 브랜딩, 제품 기획, 온라인 마케팅 전반을 총괄합니다. 개발자 관점에서 브랜드 웹사이트를 직접 구축하고 고객 경험 설계부터 론칭 전략까지 이끌고 있습니다.',
       exp_hmbg_desc: '<strong>단순 학습을 넘어 실제 시장에 출시</strong>하는 것을 목표로 동아리를 이끌고 있습니다. 회장의 Steam/STOVE 출시 노하우를 공유하는 퍼블리싱 멘토링, 분기별 빌드 데이, 신입생 대상 파이썬 튜터링을 운영합니다.',
       badge_new: '🆕 Beta 2025.05',
       badge_stove8: '🏆 STOVE 판매량 8위',
@@ -101,8 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                <strong>[해결]</strong> 기존 가드레일 하단에 볼트 체결만으로 부착 가능한 <strong>확장형 교통 안전 패널(A.U.P, Anti-Underride Panel)</strong>을 제안했습니다. 인프라 전면 교체 없이 최소 예산으로 안전망을 확보할 수 있어 B2G·B2B 시장 모두에 적용 가능한 솔루션입니다.<br><br>
                                순천향대학교 RISE사업단 주최 제1회 대회 START-UP Track-1 <strong>은상</strong> 수상.`,
       view_announcement: '공지사항 보기 &rarr;',
-      project_glamp_name: '순천향대학교 G-LAMP 사업단 1기 LAMP 서포터즈',
-      project_glamp_summary: `<strong>[역할]</strong> 순천향대학교 G-LAMP 사업단 1기 공식 홍보 서포터즈로 선정되어, 전문 연구 성과를 일반 대중이 이해할 수 있는 언어로 전달하는 과제를 맡았습니다.<br><br>
+      project_glamp_name: '순천향대학교 G-LAMP 사업단 LAMP 서포터즈',
+      project_glamp_summary: `<strong>[역할]</strong> 순천향대학교 G-LAMP 사업단 공식 홍보 서포터즈로 선정되어, 전문 연구 성과를 일반 대중이 이해할 수 있는 언어로 전달하는 과제를 맡았습니다.<br><br>
                             <strong>[기여]</strong> 카드뉴스·숏폼 영상 등 SNS 채널에 최적화된 포맷을 직접 기획·제작하여, 기초과학 콘텐츠의 접근성을 높이고 대중과 학계 사이의 가교 역할을 수행했습니다.`,
       project_glamp_tag1: '홍보 서포터즈',
       project_glamp_tag2: '콘텐츠 기획·제작',
@@ -128,8 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
       activity_rep1_desc: '학과 신입생을 대표하여 학생 자치 활동에 참여하고 학과 행사 및 소통을 주도했습니다.',
       activity_rep1_tag1: '학생 대표',
       activity_rep1_tag2: '학생 자치',
-      activity_glamp_title: '순천향대학교 G-LAMP 1기 LAMP 서포터즈',
-      activity_glamp_desc: '<strong>[역할]</strong> G-LAMP 사업단 1기 공식 홍보 서포터즈.<br><strong>[기여]</strong> 카드뉴스·숏폼 영상 등 SNS 최적화 콘텐츠를 기획·제작하여 기초과학을 대중과 연결.',
+      activity_glamp_title: '순천향대학교 G-LAMP LAMP 서포터즈',
+      activity_glamp_desc: '<strong>[역할]</strong> G-LAMP 사업단 공식 홍보 서포터즈.<br><strong>[기여]</strong> 카드뉴스·숏폼 영상 등 SNS 최적화 콘텐츠를 기획·제작하여 기초과학을 대중과 연결.',
       activity_glamp_tag1: '홍보 서포터즈',
       activity_glamp_tag2: '콘텐츠 기획·제작',
       activity_glamp_tag3: '기초과학 대중화',

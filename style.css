@@ -391,9 +391,9 @@ h3,
 
 @media (min-width: 900px) {
   .about-grid {
-    grid-template-columns: 1fr 320px;
-    align-items: start;
-    gap: 8rem;
+    grid-template-columns: 1fr 360px;
+    align-items: center;
+    gap: 5rem;
   }
 }
 
@@ -439,7 +439,7 @@ h3,
 /* Profile Image Frame - 3:4 Aspect Ratio (945x1260) */
 .image-frame {
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   aspect-ratio: 3 / 4;
   position: relative;
   overflow: hidden;

@@ -116,7 +116,9 @@
                          <strong>2025 한국디지털콘텐츠학회 하계종합학술대회 동상 수상</strong>`,
       read_paper: '논문 읽기',
       alt_paper: 'FSM NPC AI 논문 동상 상장',
-      project_award_name: '2025 SCHU AI·SW Festival 게임개발경진대회 - 최우수상 (MAYHEM)',
+      project_award_name: 'MAYHEM',
+      project_award_badge: '최우수상',
+      project_award_event: '2025 SCHU AI·SW Festival 게임개발경진대회',
       project_award_summary: `<strong>[문제]</strong> 단순 킬 카운트 점수 방식으로는 전략적 플레이가 유도되지 않아 게임이 단조로웠습니다.<br><br>
                               <strong>[해결]</strong> 기존 방식 대신 멀티킬 보너스와 스타일 배율을 결합한 독창적 공식 <code>(킬 수 + Σ(멀티킬 수 - 1) × 스타일 점수)</code>를 설계하여 위험을 감수할수록 더 높은 점수를 얻는 전략적 긴장감을 구현했습니다.<br><br>
                               물리 기반 이동 시스템과의 시너지가 심사위원들의 극찬을 받아 <strong>최우수상</strong> 수상.`,
@@ -125,7 +127,9 @@
       view_certificate_schu: '상장 보기 (PDF)',
       view_certificate: '상장 (PDF)',
       alt_schu: '2025 SCHU AI·SW Festival 최우수상 상장 (MAYHEM)',
-      project_startup_name: '순천향대학교 제1회 로컬 창업동아리 아이디어 리그 경진대회 START-UP Track-1 - 은상 (Under-Shield)',
+      project_startup_name: 'Under-Shield',
+      project_startup_badge: '은상',
+      project_startup_event: '순천향대학교 제1회 로컬 창업동아리 아이디어 리그 경진대회 · START-UP Track-1',
       project_startup_summary: `<strong>[문제]</strong> 전기차처럼 무게중심이 낮은 차량은 충돌 시 가드레일 하부로 파고드는 '언더라이드' 사고로 탑승자가 치명상을 입지만, 기존 가드레일 전면 교체 비용이 너무 높아 현실적 도입이 어려웠습니다.<br><br>
                                <strong>[해결]</strong> 기존 가드레일 하단에 볼트 체결만으로 부착 가능한 <strong>확장형 교통 안전 패널(A.U.P, Anti-Underride Panel)</strong>을 제안했습니다. 인프라 전면 교체 없이 최소 예산으로 안전망을 확보할 수 있어 B2G·B2B 시장 모두에 적용 가능한 솔루션입니다.<br><br>
                                순천향대학교 RISE사업단 주최 제1회 대회 START-UP Track-1 <strong>은상</strong> 수상.`,
@@ -253,7 +257,9 @@
                          <strong>Bronze Prize — 2025 DCS Summer Academic Conference</strong>`,
       read_paper: 'Read Paper',
       alt_paper: 'Bronze Prize certificate for the FSM NPC AI paper',
-      project_award_name: '2025 SCHU AI·SW Festival Game Development - Grand Prize (MAYHEM)',
+      project_award_name: 'MAYHEM',
+      project_award_badge: 'Grand Prize',
+      project_award_event: '2025 SCHU AI·SW Festival — Game Development Competition',
       project_award_summary: `<strong>[Problem]</strong> A simple kill-count score system failed to incentivize risky, skillful play — making the game feel shallow.<br><br>
                               <strong>[Solution]</strong> Designed a custom scoring formula <code>(Kills + Σ(Multi-kills − 1) × Style Score)</code> that rewards risk-taking, creating meaningful strategic tension. Combined with physics-based movement, the system earned the jury's praise and the <strong>Grand Prize</strong>.`,
       video_mayhem1: 'MAYHEM Demo (1)',
@@ -261,7 +267,9 @@
       view_certificate_schu: 'View Certificate (PDF)',
       view_certificate: 'Certificate (PDF)',
       alt_schu: '2025 SCHU AI·SW Festival Grand Prize certificate (MAYHEM)',
-      project_startup_name: 'SCH 1st Local Startup Club Idea League - START-UP Track-1 Silver Prize (Under-Shield)',
+      project_startup_name: 'Under-Shield',
+      project_startup_badge: 'Silver Prize',
+      project_startup_event: 'SCH 1st Local Startup Club Idea League · START-UP Track-1',
       project_startup_summary: `<strong>[Problem]</strong> EVs and low-CoG vehicles face a fatal underride risk in collisions. Full guardrail replacement costs make safety upgrades impractical for most municipalities.<br><br>
                                <strong>[Solution]</strong> Proposed the <strong>Anti-Underride Panel (A.U.P)</strong> — a bolt-on extension to existing guardrails that blocks underride without infrastructure replacement. A B2G / B2B-ready solution that achieves modern safety standards at a fraction of the cost.<br><br>
                                Awarded the <strong>Silver Prize</strong> at the 1st SCH Local Startup Club Idea League, START-UP Track-1.`,

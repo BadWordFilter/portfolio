@@ -761,6 +761,7 @@ html[lang="ko"] .work-name--hangul { font-size: clamp(1.55rem, 2.7vw, 2.4rem); l
 .proj-badge--new { border: 1px solid var(--gold-3); color: var(--gold); background: rgba(212, 181, 122, 0.06); }
 .proj-badge--new::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
 .proj-badge--rank { background: var(--gold); color: var(--bg); }
+.work-event { margin: -0.6rem 0 1.3rem; font-size: 0.66rem; color: var(--ink-3); line-height: 1.7; max-width: 56ch; }
 .work-summary { font-size: 1rem; line-height: 1.8; color: var(--ink-2); max-width: 56ch; margin-bottom: 1.8rem; }
 .work-summary strong { color: var(--ink); font-weight: 500; }
 .work-links { display: flex; flex-wrap: wrap; gap: 0.8rem 1.8rem; }
